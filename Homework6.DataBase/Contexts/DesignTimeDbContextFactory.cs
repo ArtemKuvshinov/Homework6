@@ -23,10 +23,11 @@ namespace Homework6.DAL.Contexts
                                .AddJsonFile("appsettings.json", false, true)
                                .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
                                         true, true)
-                               .AddEnvironmentVariables()
+                               .AddEnvironmentVariables()                               
                                .Build();
 
-            var connectionString = configuration.GetConnectionString(nameof(Homework4Context));
+             // var connectionString = configuration.GetConnectionString(nameof(Homework4Context));
+            var connectionString = configuration["Connect:ConnectionString"];
 
             var builder = new DbContextOptionsBuilder<Homework4Context>()
                    .UseNpgsql(connectionString, __options =>

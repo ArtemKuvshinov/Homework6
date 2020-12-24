@@ -15,12 +15,14 @@ namespace Homework6.Repositories
         protected readonly Homework4Context _сontext ;
         public IBuildingRepository Building { get; }
         public IConstructionCompanyRepository ConstructionCompany { get; }
+        public IUserRepository UserRepository { get; }
 
-        public UnitOfWork(Homework4Context сontext, IConstructionCompanyRepository constructionCompany, IBuildingRepository building)
+        public UnitOfWork(Homework4Context сontext, IConstructionCompanyRepository constructionCompany, IBuildingRepository building, IUserRepository user)
         {
             this._сontext = сontext;
-            this.Building = building;
+            this.Building = building;            
             this.ConstructionCompany = constructionCompany;
+            this.UserRepository = user;
         }
 
         /// <summary>

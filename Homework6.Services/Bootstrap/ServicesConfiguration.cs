@@ -17,7 +17,8 @@ namespace Homework6.Services.Bootstrap
         public static void ConfigureServices(this IServiceCollection services)
         {
             services.AddTransient<IBuildingService, BuildingService>();
-            services.AddTransient<IConstructionCompanyService, ConstructionCompanyService>();
+            services.AddTransient<IConstructionCompanyService, ConstructionCompanyService>();     
+            services.AddScoped<IUserService, UserService>();
         }
     }
 }

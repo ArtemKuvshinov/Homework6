@@ -9,7 +9,6 @@ using AutoMapper;
 using Homework6.Models.Requests.ConstructionCompany;
 using Homework6.Models.Responses.ConstructionCompany;
 using System.Threading;
-using Homework6.Repositories.Interfaces;
 
 namespace Homework6.Controllers
 {

@@ -3,15 +3,17 @@ using System;
 using Homework6.DAL.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Homework6.DAL.Migrations
 {
     [DbContext(typeof(Homework4Context))]
-    partial class Homework4ContextModelSnapshot : ModelSnapshot
+    [Migration("20201221183459_AddModelsForAuth")]
+    partial class AddModelsForAuth
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

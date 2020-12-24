@@ -19,7 +19,7 @@ namespace Homework6.DAL.Bootstrap
         {
             services.AddDbContext<Homework4Context>(    
                 options => options.UseNpgsql(
-                    configuration.GetConnectionString(nameof(Homework4Context)),
+                    configuration["Connect:ConnectionString"], /* configuration.GetConnectionString(nameof(Homework4Context)),*/
                     builder => builder.MigrationsAssembly(typeof(Homework4Context).Assembly.FullName))
             );
         }

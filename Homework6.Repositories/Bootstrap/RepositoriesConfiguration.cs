@@ -17,6 +17,7 @@ namespace Homework6.Repositories.Bootstrap
         {
             services.AddScoped<IBuildingRepository, BuildingRepository>();
             services.AddScoped<IConstructionCompanyRepository, ConstructionCompanyRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         }

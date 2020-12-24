@@ -15,6 +15,8 @@ namespace Homework6.Repositories.Interfaces
     {
         public IBuildingRepository Building { get; }
         public IConstructionCompanyRepository ConstructionCompany { get; }
+       public IUserRepository UserRepository { get; }
+
        
         /// <summary>
         /// Сохранение изменений в БД.

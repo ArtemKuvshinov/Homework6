@@ -46,5 +46,19 @@ namespace Homework6.DAL.Contexts
         /// </summary>
         public DbSet<BuildingСomposition> BuildingСompositions { get; set; }
 
+        /// <summary>
+        /// Users.
+        /// </summary>
+        public DbSet<User> Users { get; set; }
+
+        /// <summary>
+        /// Roles.
+        /// </summary>
+        public DbSet<Role> Roles { get; set; }
+
+        /// <summary>
+        /// User roles.
+        /// </summary>
+        public DbSet<UserRoles> UserRoles { get; set; }
     }
 }
